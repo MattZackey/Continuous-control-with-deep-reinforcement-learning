@@ -3,3 +3,5 @@ The following is an example of applying the [Deep Deterministic Policy Gradient 
 
 #Training results
 To come: Applying DDPG to several MuJoCo and Box2D environments. 
+
+![Results](https://github.com/MattZackey/Continuous-control-with-deep-reinforcement-learning/blob/main/Training%20results%20Pendulum.png?raw=true)

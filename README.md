@@ -5,4 +5,6 @@ To come: Applying DDPG to several MuJoCo and Box2D environments.
 
 # Training results
 
+The following figure shows the score the agent achieves per espisode of training.
+
 ![Results](https://github.com/MattZackey/Continuous-control-with-deep-reinforcement-learning/blob/main/Training%20results%20Pendulum.png?raw=true)

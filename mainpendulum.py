@@ -24,8 +24,6 @@ from record import record_image
 # Setup game
 env = gym.make('Pendulum-v1')
 
-torch.set_num_threads(1)
-
 # Set random number seeds
 def set_random_seeds(env, seed):
     torch.manual_seed(seed)  # PyTorch

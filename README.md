@@ -7,4 +7,4 @@ To come: Applying DDPG to several MuJoCo and Box2D environments.
 
 The following figure shows the score the agent achieves per espisode of training.
 
-
+![Results](https://github.com/MattZackey/Deep-Deterministic-Policy-Gradient/blob/main/Training%20results.png?raw=true) 

@@ -1,9 +1,9 @@
 # Continuous control with deep reinforcement learning
 The following is [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf) algorithm
 
-# Pendulum swingup
-The goal is to swing the Pendulum into an upright position.
+# Pendulum
 
+The goal is to swing the Pendulum into an upright position.
 
 <div style="display: flex;">
 
@@ -18,6 +18,13 @@ The goal is to swing the Pendulum into an upright position.
     <h3>Episode 40</h3>
     <div style="border: 1px solid black; padding: 5px;; display: inline-block">
       <img src="Pendulum_results/run40.gif" alt="Image 2" style="max-width: 50%; width: 150px;">
+    </div>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Episode 200</h3>
+    <div style="border: 1px solid black; padding: 5px;; display: inline-block">
+      <img src="Pendulum_results/run200.gif" alt="Image 2" style="max-width: 50%; width: 150px;">
     </div>
   </div>
 

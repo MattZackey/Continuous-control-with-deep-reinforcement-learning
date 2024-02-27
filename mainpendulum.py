@@ -51,7 +51,7 @@ for i_episode in range(num_episodes):
 
     # Record agents behaviour (This does not form part of the training run)
     if((i_episode + 1) % 20 == 0):
-        record_image(agent_env = 'Pendulum-v1', agent = agent_pen, num_iter = (i_episode + 1), example_path = 'Pendulum_results2')
+        record_image(agent_env = 'Pendulum-v1', agent = agent_pen, num_iter = (i_episode + 1), example_path = 'Pendulum_results')
 
     state,_ = env.reset()
     total_reward = 0

@@ -17,7 +17,26 @@ To come: Applying DDPG to several MuJoCo and Box2D environments.
   <div style="flex: 1; text-align: center;">
     <h3>Image 2 Heading</h3>
     <div style="border: 1px solid black; padding: 5px;">
-      <img src="Pendulum_results/run50.gif" alt="Image 2" style="max-width: 50%;">
+      <img src="Pendulum_results/run40.gif" alt="Image 2" style="max-width: 50%;">
+    </div>
+  </div>
+
+</div>
+
+
+<div style="display: flex;">
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Image 1 Heading</h3>
+    <div style="border: 1px solid black; padding: 5px;">
+      <img src="Pendulum_results/run20.gif" alt="Image 1" style="max-width: 100%; width: 200px;">
+    </div>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Image 2 Heading</h3>
+    <div style="border: 1px solid black; padding: 5px;">
+      <img src="Pendulum_results/run40.gif" alt="Image 2" style="max-width: 100%; width: 200px;">
     </div>
   </div>
 

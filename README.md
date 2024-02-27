@@ -1,5 +1,5 @@
 # Continuous control with deep reinforcement learning
-The following is [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf) algorithm
+The following is the [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf) algorithm applied to the Pendulum environment.
 
 # Pendulum
 

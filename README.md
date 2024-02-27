@@ -32,4 +32,4 @@ The goal is to swing the Pendulum into an upright position.
 
 The following figure shows the score the agent achieves per espisode of training.
 
-![Results](https://github.com/MattZackey/Deep-Deterministic-Policy-Gradient/blob/main/Training%20results.png?raw=true) 
+![Results](https://github.com/MattZackey/Deep-Deterministic-Policy-Gradient/blob/main/Results%20Pendulum.png?raw=true) 

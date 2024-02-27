@@ -7,17 +7,18 @@ import math
 #################################################################################
 class Actor_net(nn.Module):
 
-    def __init__(self, state_dim, action_space_scale):
+    def __init__(self, state_dim, action_dim, action_space_scale):
         super(Actor_net, self).__init__()
 
         self.state_dim = state_dim
+        self.action_dim = action_dim
         self.action_space_scale = action_space_scale
 
         self.layer1 = nn.Linear(self.state_dim, 400)
         self.layer1_norm = nn.BatchNorm1d(400)
         self.layer2 = nn.Linear(400, 300)
         self.layer2_norm = nn.BatchNorm1d(300)
-        self.layer3 = nn.Linear(300, 1)
+        self.layer3 = nn.Linear(300, self.action_dim)
 
         self.intial_parameters()
 

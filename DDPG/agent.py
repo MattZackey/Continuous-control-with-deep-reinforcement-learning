@@ -10,16 +10,16 @@ from torchrl.data import TensorDictReplayBuffer, LazyMemmapStorage
 from DDPG.networks import Actor_net, Critic_net
 from DDPG.noise import ornstein_uhlenbeck
 
-class Agent_Pendulum:
+class Agent_DDPG:
 
-    def __init__(self, state_dim, action_dim, action_space_scale, size_memory, batch_size, gamma, tau, lr_actor, lr_critic):
+    def __init__(self, state_dim, action_dim, action_space_scale, size_memory, batch_size, gamma, tau, lr_actor, lr_critic, sigma, dt):
 
         self.state_dim = state_dim
         self.action_dim = action_dim
 
         # Initialize Actor newtorks
-        self.actor = Actor_net(self.state_dim,  action_space_scale)
-        self.target_actor = Actor_net(self.state_dim,  action_space_scale)
+        self.actor = Actor_net(self.state_dim, self.action_dim, action_space_scale)
+        self.target_actor = Actor_net(self.state_dim, self.action_dim, action_space_scale)
         self.target_actor.load_state_dict(self.actor.state_dict())
 
         # Initialize Critic networks
@@ -27,7 +27,7 @@ class Agent_Pendulum:
         self.target_critic = Critic_net(self.state_dim, self.action_dim)
         self.target_critic.load_state_dict(self.critic.state_dict())
 
-        self.noise = ornstein_uhlenbeck(action_dim = action_dim)
+        self.noise = ornstein_uhlenbeck(action_dim = self.action_dim, sigma = sigma, dt = dt)
         self.memory = TensorDictReplayBuffer(storage=LazyMemmapStorage(size_memory))
         self.batch_size = batch_size
         self.gamma = gamma

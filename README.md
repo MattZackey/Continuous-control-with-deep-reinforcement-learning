@@ -6,11 +6,11 @@ To come: Applying DDPG to several MuJoCo and Box2D environments.
 # Training results
 
 <div style="border: 1px solid black; display: flex;">
-  <div style="border: 1px solid black; padding: 5px;">
-    <img src="Pendulum_results/run20.gif" alt="Image 1" style="max-width: 50%;">
+  <div style="border: 1px solid black; padding: 3px;">
+    <img src="Pendulum_results/run20.gif" alt="Image 1" style="max-width: 20%;">
   </div>
-  <div style="border: 1px solid black; padding: 5px;">
-    <img src="Pendulum_results/run40.gif" alt="Image 2" style="max-width: 50%;">
+  <div style="border: 1px solid black; padding: 3px;">
+    <img src="Pendulum_results/run40.gif" alt="Image 2" style="max-width: 20%;">
   </div>
 </div>
 

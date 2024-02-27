@@ -18,43 +18,44 @@ from torchrl.data import TensorDictReplayBuffer, LazyMemmapStorage
 from itertools import count
 from DDPG.networks import Actor_net, Critic_net
 from DDPG.noise import ornstein_uhlenbeck
-from DDPG.agent import Agent_Pendulum
+from DDPG.agent import Agent_DDPG
 from record import record_image
 
 # Setup game
 env = gym.make('Pendulum-v1')
 
 # Set random number seeds
-def set_random_seeds(env, seed):
-    torch.manual_seed(seed)  # PyTorch
-    np.random.seed(seed)     # NumPy
-    random.seed(seed)        # Python
 seed_value = 965
-set_random_seeds(env, seed_value)
+torch.manual_seed(seed_value)  # PyTorch
+np.random.seed(seed_value)     # NumPy
+random.seed(seed_value)        # Python
 
 # Setup agent
-agent_pen = Agent_Pendulum(state_dim = env.observation_space._shape[0],
-                           action_dim = env.action_space.shape[0],
-                           action_space_scale = env.action_space.high[0],
-                           size_memory = 10000,
-                           batch_size = 64,
-                           gamma = 0.99,
-                           tau = 0.001,
-                           lr_actor = 1e-4,
-                           lr_critic = 1e-3)
+agent_pen = Agent_DDPG(state_dim = env.observation_space._shape[0],
+                        action_dim = env.action_space.shape[0],
+                        action_space_scale = env.action_space.high[0],
+                        size_memory = 10000,
+                        batch_size = 64,
+                        gamma = 0.99,
+                        tau = 0.001,
+                        lr_actor = 1e-4,
+                        lr_critic = 1e-3,
+                        sigma = 0.2,
+                        dt = 0.01)
 
 # Train agent
 num_episodes = 200
 score = []
 for i_episode in range(num_episodes):
 
+
+    # Record agents behaviour (This does not form part of the training run)
+    if((i_episode + 1) % 20 == 0):
+        record_image(agent_env = 'Pendulum-v1', agent = agent_pen, num_iter = (i_episode + 1), example_path = 'Pendulum_results2')
+
     state,_ = env.reset()
     total_reward = 0
     agent_pen.noise.reset()
-    
-    # Record agents behaviour (This does not form part of the training run)
-    if((i_episode + 1) % 20 == 0):
-        record_image(agent_env = 'Pendulum-v1', agent = agent_pen, num_iter = (i_episode+1), example_path = 'Pendulum_results')
 
     for t in count():
 

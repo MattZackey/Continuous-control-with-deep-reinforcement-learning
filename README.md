@@ -8,21 +8,21 @@ The following is the [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.o
   <div style="flex: 1; text-align: center;">
     <h3>Episode 100</h3>
     <div style="border: 1px solid black; padding: 5px; display: inline-block">
-      <img src="Lunarlander_results/run100.gif" alt="Image 1" style="max-width: 70%; width: 180px;">
+      <img src="Lunarlander_results/run100.gif" alt="Image 1" style="max-width: 70%; width: 250px;">
     </div>
   </div>
 
   <div style="flex: 1; text-align: center;">
     <h3>Episode 500</h3>
     <div style="border: 1px solid black; padding: 5px;; display: inline-block">
-      <img src="Lunarlander_results/run500.gif" alt="Image 2" style="max-width: 70%; width: 180px;">
+      <img src="Lunarlander_results/run500.gif" alt="Image 2" style="max-width: 70%; width: 2500px;">
     </div>
   </div>
 
   <div style="flex: 1; text-align: center;">
     <h3>Episode 2000</h3>
     <div style="border: 1px solid black; padding: 5px;; display: inline-block">
-      <img src="Lunarlander_results/run2000.gif" alt="Image 3" style="max-width: 70%; width: 180px;">
+      <img src="Lunarlander_results/run2000.gif" alt="Image 3" style="max-width: 70%; width: 250px;">
     </div>
   </div>
 
@@ -39,21 +39,21 @@ The goal is to reach the flag in the least amount of time possible.
   <div style="flex: 1; text-align: center;">
     <h3>Episode 50</h3>
     <div style="border: 1px solid black; padding: 5px; display: inline-block">
-      <img src="MountainCar_results/run50.gif" alt="Image 1" style="max-width: 70%; width: 180px;">
+      <img src="MountainCar_results/run50.gif" alt="Image 1" style="max-width: 70%; width: 250px;">
     </div>
   </div>
 
   <div style="flex: 1; text-align: center;">
     <h3>Episode 150</h3>
     <div style="border: 1px solid black; padding: 5px;; display: inline-block">
-      <img src="MountainCar_results/run150.gif" alt="Image 2" style="max-width: 70%; width: 180px;">
+      <img src="MountainCar_results/run150.gif" alt="Image 2" style="max-width: 70%; width: 250px;">
     </div>
   </div>
 
   <div style="flex: 1; text-align: center;">
     <h3>Episode 300</h3>
     <div style="border: 1px solid black; padding: 5px;; display: inline-block">
-      <img src="MountainCar_results/run300.gif" alt="Image 3" style="max-width: 70%; width: 180px;">
+      <img src="MountainCar_results/run300.gif" alt="Image 3" style="max-width: 70%; width: 250px;">
     </div>
   </div>
 

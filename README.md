@@ -1,6 +1,34 @@
 # Continuous control with deep reinforcement learning
 The following is the [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf) algorithm applied to several OpenAI gym environments.
 
+# Lunar Lander
+
+<div style="display: flex;">
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Episode 100</h3>
+    <div style="border: 1px solid black; padding: 5px; display: inline-block">
+      <img src="Lunarlander_results/run100.gif" alt="Image 1" style="max-width: 70%; width: 180px;">
+    </div>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Episode 500</h3>
+    <div style="border: 1px solid black; padding: 5px;; display: inline-block">
+      <img src="Lunarlander_results/run500.gif" alt="Image 2" style="max-width: 70%; width: 180px;">
+    </div>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <h3>Episode 2000</h3>
+    <div style="border: 1px solid black; padding: 5px;; display: inline-block">
+      <img src="Lunarlander_results/run2000.gif" alt="Image 3" style="max-width: 70%; width: 180px;">
+    </div>
+  </div>
+
+</div>
+
+The following figure shows the score the agent achieves per espisode of training.
 
 # Mountain Car Continuous
 
